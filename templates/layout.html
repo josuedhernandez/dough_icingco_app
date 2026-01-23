@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Standard <head> tags -->
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/layout.css') }}">
+    <!--This is used to include additional head elements via Flask-->
+    {% block head %}
+    {% endblock %}
+    </head>
+
+    <body>
+        <h1>{{header}}</h1>
+        <!--This holds the content of the page-->
+        {% block content %}{% endblock %}
+    </body>
+</html>
