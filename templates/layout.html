@@ -10,8 +10,13 @@
     {% endblock %}
     </head>
 
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a> |
+        <a href="{{ url_for('about') }}">About</a>
+    </nav>
+
     <body>
-        <h1>{{header}}</h1>
+       <i><h1>{{header}}</h1></i>
         <!--This holds the content of the page-->
         {% block content %}{% endblock %}
     </body>

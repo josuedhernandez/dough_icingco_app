@@ -2,4 +2,29 @@ body{
 
     /*set a font. */
     font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 100%;
 }
+
+a{
+    text-decoration: none;
+    color: #ffffff; /*white color for links */
+}
+
+nav{
+    background-color: #000000;/*grey background for nav bar */
+    padding: 7px;
+    border-radius: 2px;
+    color:#ffffff; /*white color for nav text */
+}
+h1{
+    font-weight: normal;
+    color: #41383c; /*grey color for h1 */
+    text-align: center;
+
+}
+a:hover{
+    color: #aa86ac; /*light pink color for hover effect on links */
+
+}
+
