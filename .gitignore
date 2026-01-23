@@ -1,0 +1,6 @@
+# Virtual Enviroment
+venvflaskapp/
+
+
+# Python cache
+__pycache__/
