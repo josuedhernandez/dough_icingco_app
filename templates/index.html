@@ -1,10 +1,22 @@
 {% extends "layout.html" %}
-<!--This extends the layout.html template, it MUST be the FIRST LINE of the file -->
-<!--Sets the title of the page -->
-{% block title %}Home{% endblock %}
 
-<!--This fills in the content block defined in layout.html -->
+{% block title %}{{ header }}{% endblock %}
+
 {% block content %}
-<!--Displays the content variable passed from the Flask app -->
-    <p>{{ content }}</p>
+    <section class="intro">
+        <p>{{ content }}</p>
+    </section>
+
+    {% if images %}
+    <section class="gallery">
+        <h2>Our Creations</h2>
+        <div class="gallery-grid">
+            {% for image in images %}
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/' + image) }}" alt="Bakery Treat">
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
 {% endblock %}

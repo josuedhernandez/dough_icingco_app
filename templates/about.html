@@ -1,6 +1,8 @@
 {% extends "layout.html" %}
-{% block title %}About{% endblock %}
+{% block title %}{{ header }}{% endblock %}
 
 {% block content %}
-    <p>{{ content }}</p>
+    <section class="intro">
+        <p>{{ content }}</p>
+    </section>
 {% endblock %}

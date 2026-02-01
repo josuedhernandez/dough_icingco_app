@@ -1,6 +1,10 @@
 # Virtual Enviroment
 venvflaskapp/
-
+.DS_Store
+.vscode/
+static/.DS_Store
+static/css/.DS_Store
 
 # Python cache
 __pycache__/
+*.py[cod]
